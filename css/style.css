@@ -1,0 +1,250 @@
+    /* 1. GLOBAL VARIABLES */
+    :root {
+        --primary-color: #d4a017; /* Turmeric Gold */
+        --secondary-color: #8b5a2b; /* Ginger Brown */
+        --light-bg: #fffbf0;      /* Cream Background */
+        --dark-text: #333333;
+    }
+
+    body {
+        font-family: 'Poppins', sans-serif;
+        color: var(--dark-text);
+        overflow-x: hidden; /* Prevents scrollbar if animations slide in */
+    }
+
+    h1, h2, h3, h4, h5, h6, .navbar-brand {
+        font-family: 'Playfair Display', serif;
+    }
+
+    /* 2. NAVBAR (Glassmorphism) */
+    .navbar-custom {
+        background-color: rgba(255, 255, 255, 0.85);
+        backdrop-filter: blur(10px);
+        box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+        transition: all 0.3s ease;
+    }
+
+    .navbar-brand {
+        color: var(--secondary-color) !important;
+        font-weight: bold;
+        font-size: 1.5rem;
+    }
+
+    .nav-link {
+        color: #555 !important;
+        font-weight: 500;
+        transition: color 0.3s ease;
+    }
+
+    .nav-link:hover, .nav-link.active {
+        color: var(--primary-color) !important;
+    }
+
+    /* 3. HERO CAROUSEL */
+    .carousel-item {
+        height: 100vh;
+        background-color: #000;
+    }
+
+    .carousel-item img {
+        height: 100%;
+        object-fit: cover;
+        opacity: 0.75;
+    }
+
+    .carousel-caption {
+        bottom: 30%;
+        text-shadow: 2px 2px 10px rgba(0,0,0,0.7);
+    }
+
+    /* 4. BUTTONS */
+    /* Primary Turmeric Button */
+    .btn-turmeric {
+        background-color: var(--primary-color);
+        color: white;
+        border: none;
+        padding: 12px 35px;
+        border-radius: 50px; /* Pill shape is more modern */
+        font-weight: 600;
+        transition: all 0.3s ease;
+        box-shadow: 0 4px 15px rgba(212, 160, 23, 0.3); /* Colored shadow */
+    }
+
+    .btn-turmeric:hover {
+        background-color: var(--secondary-color);
+        color: white;
+        transform: translateY(-2px); /* Slight lift on hover */
+        box-shadow: 0 6px 20px rgba(139, 90, 43, 0.4);
+    }
+
+    /* 5. GENERAL SECTIONS */
+    section {
+        padding: 100px 0; /* Increased padding for more "breathing room" */
+    }
+
+    .bg-cream {
+        background-color: var(--light-bg);
+    }
+
+    /* 6. ABOUT US SECTION (New "Wow" Styles) */
+    
+    /* The Gold Text Gradient Effect */
+    .text-gradient-gold {
+        background: linear-gradient(to right, var(--secondary-color), var(--primary-color));
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+    }
+
+    /* Container for the overlapping images */
+    .about-img-holder {
+        position: relative;
+        padding-bottom: 30px; 
+        padding-right: 30px;
+        margin-bottom: 20px;
+    }
+
+    /* The Main Tall Image */
+    .img-main {
+        width: 100%;
+        object-fit: cover;
+        height: 500px;
+        position: relative;
+        z-index: 1;
+    }
+
+    /* The Small Floating Image */
+    .img-floating {
+        position: absolute;
+        bottom: 0;
+        right: 0;
+        width: 240px;
+        height: 240px;
+        z-index: 2;
+        border: 8px solid #fff; /* Thick white border to separate images */
+        object-fit: cover;
+    }
+
+    /* Polka Dot Decoration Pattern */
+    .dots-deco {
+        position: absolute;
+        top: -20px;
+        left: -20px;
+        width: 150px;
+        height: 150px;
+        /* Uses your primary color variable for the dots */
+        background-image: radial-gradient(var(--primary-color) 2px, transparent 2px);
+        background-size: 15px 15px;
+        z-index: 0;
+        opacity: 0.5;
+    }
+
+    /* Icon Circles in the About Text */
+    .icon-circle-bg {
+        background-color: rgba(212, 160, 23, 0.1); /* Primary color at 10% opacity */
+        color: var(--primary-color);
+        width: 50px;
+        height: 50px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        border-radius: 50%;
+    }
+
+    /* 7. CARDS (Mission/Features) */
+    .card-mission {
+        border: none;
+        border-radius: 15px;
+        background: #fff;
+        box-shadow: 0 10px 30px rgba(0,0,0,0.05);
+        transition: transform 0.3s ease, box-shadow 0.3s ease;
+        height: 100%;
+        padding: 2rem;
+    }
+
+    .card-mission:hover {
+        transform: translateY(-10px);
+        box-shadow: 0 15px 40px rgba(0,0,0,0.1);
+    }
+
+    .icon-box {
+        font-size: 3rem;
+        color: var(--primary-color);
+        margin-bottom: 20px;
+        display: inline-block;
+    }
+
+    /* 8. MOBILE RESPONSIVENESS */
+    @media (max-width: 991px) {
+        /* On tablets/mobile, shrink the images slightly */
+        .img-main { height: 400px; }
+        .img-floating { width: 160px; height: 160px; border-width: 5px; }
+        
+        section { padding: 60px 0; }
+        
+        .carousel-caption { bottom: 20%; }
+    }
+
+    /* 1. New Dark Background for Contrast */
+.bg-ginger-dark {
+    background-color: var(--secondary-color); /* Uses your Brown color */
+    padding: 100px 0;
+}
+
+/* 2. The Card Style (Refactored) */
+.card-static {
+    background-color: #ffffff;
+    border: none;
+    
+    /* "Not so rounded" corners (6px is subtle/sharp) */
+    border-radius: 6px; 
+    
+    /* Deep Shadow */
+    box-shadow: 0 10px 40px rgba(0,0,0,0.3); 
+    
+    padding: 3rem 2rem;
+    text-align: center;
+    
+    /* No Transition/Transform logic here, so it stays still on hover */
+}
+
+/* 3. Icon Styling inside the cards */
+.icon-wrap {
+    font-size: 3rem;
+    color: var(--primary-color); /* Turmeric Gold */
+    /* Optional: Add a light circle background behind icon */
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    width: 80px;
+    height: 80px;
+    background-color: var(--light-bg); /* Pale cream circle */
+    border-radius: 50%;
+}
+
+/* 4. Text Utilities for this section */
+.text-white-50 {
+    color: rgba(255, 255, 255, 0.7) !important;
+}
+
+/* Contact Map Styling */
+.map-frame {
+    position: relative;
+    border: 5px solid #fff; /* White border framing the map */
+    height: 450px;
+    background-color: #e9ecef; /* Grey placeholder while loading */
+}
+
+/* This creates the "Static" effect */
+.map-frame iframe {
+    /* 
+       grayscale(100%) = Makes map black & white (Classy look). 
+       Remove this line if you want the map in color. 
+    */
+    filter: grayscale(100%) invert(5%); 
+    
+    /* 
+       pointer-events: none = Makes the map ignore mouse clicks/scrolls.
+       This effectively turns the interactive map into a static image.
+    */
+    pointer-events: none; 
+}

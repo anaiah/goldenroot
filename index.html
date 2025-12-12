@@ -1,0 +1,368 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>GoldenRoot | Turmeric & Ginger Elixir</title>
+    <!-- Bootstrap 5.3 CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700&family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+    <!-- Bootstrap Icons -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css">
+    <!-- AOS Animation CSS -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+
+    <link rel="stylesheet" href="./css/style.css">
+
+</head>
+<body>
+
+    <!-- Semi-Transparent Navbar -->
+    <nav class="navbar navbar-expand-lg navbar-custom fixed-top">
+        <div class="container">
+            <a class="navbar-brand" href="#"><i class="bi bi-flower1"></i> GoldenRoot</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item"><a class="nav-link active" href="#home">Home</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#about">About Us</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#mission">Mission & Vision</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#contact">Contact</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Carousel Section -->
+    <header id="home">
+        <div id="heroCarousel" class="carousel slide carousel-fade" data-bs-ride="carousel">
+            <div class="carousel-indicators">
+                <button type="button" data-bs-target="#heroCarousel" data-bs-slide-to="0" class="active"></button>
+                <button type="button" data-bs-target="#heroCarousel" data-bs-slide-to="1"></button>
+                <button type="button" data-bs-target="#heroCarousel" data-bs-slide-to="2"></button>
+            </div>
+            <div class="carousel-inner">
+                
+                <!-- Slide 1: Turmeric Powder -->
+                <div class="carousel-item active">
+                    <img src="farmer_main.jpg" class="d-block w-100" alt="Turmeric Powder and Roots">
+                    <div class="carousel-caption d-none d-md-block">
+                        <h1 class="display-3 fw-bold">Golden Turmeric Extract</h1>
+                        <p class="lead">Harnessing the vibrant healing power of nature's brightest root.</p>
+                        <a href="#about" class="btn btn-turmeric btn-lg">Discover More</a>
+                    </div>
+                </div>
+
+                <!-- Slide 2: Fresh Ginger -->
+                <div class="carousel-item">
+                    <img src="ginger1.jpg" class="d-block w-100" alt="Fresh Ginger Roots">
+                    <div class="carousel-caption d-none d-md-block">
+                        <h1 class="display-3 fw-bold">Fresh Organic Ginger</h1>
+                        <p class="lead">Hand-harvested roots, bringing warmth and vitality to your life.</p>
+                    </div>
+                </div>
+
+                <!-- Slide 3: The Product/Tea -->
+                <div class="carousel-item">
+                    <img src="product2.jpg" class="d-block w-100" alt="Golden Milk Tea">
+                    <div class="carousel-caption d-none d-md-block">
+                        <h1 class="display-3 fw-bold">The Perfect Blend</h1>
+                        <p class="lead">A soothing elixir crafted for immunity, digestion, and wellness.</p>
+                    </div>
+                </div>
+
+            </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#heroCarousel" data-bs-slide="prev">
+                <span class="carousel-control-prev-icon"></span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#heroCarousel" data-bs-slide="next">
+                <span class="carousel-control-next-icon"></span>
+            </button>
+        </div>
+    </header>
+
+    <!-- About Us Section -->
+    <section id="about" class="bg-cream overflow-hidden">
+        <div class="container">
+            <div class="row align-items-center">
+                
+                <!-- COLUMN 1: Visual Composition (Images) -->
+                <div class="col-lg-6 mb-5 mb-lg-0 pe-lg-5">
+                    <div class="about-img-holder" data-aos="fade-right">
+                        <!-- The Decorative Polka Dots (CSS class: .dots-deco) -->
+                        <div class="dots-deco"></div>
+                        
+                        <!-- Main Large Image -->
+                        <img src="product_aboutus.jpg" 
+                            class="img-main rounded-4 shadow-lg" 
+                            alt="Golden turmeric roots">
+                        
+                        <!-- Floating Detail Image -->
+                        <img src="drinking.jpg" 
+                            class="img-floating rounded-4 shadow-lg" 
+                            alt="Finished turmeric powder">
+                    </div>
+                </div>
+
+                <!-- COLUMN 2: Text Content -->
+                <div class="col-lg-6 ps-lg-4">
+                    <div data-aos="fade-left">
+                        <!-- Sub-headline with Gradient (CSS class: .text-gradient-gold) -->
+                        <span class="text-gradient-gold fw-bold text-uppercase ls-2 mb-2 d-block">The Story</span>
+                        
+                        <!-- Main Headline -->
+                        <h2 class="display-5 fw-bold mb-4">Ancient Roots,<br>Modern Wellness.</h2>
+                        
+                        <!-- Lead Paragraph (Introduction) -->
+                        <p class="lead mb-4 opacity-75">
+                            We believe in the restorative power of nature. Our journey began on a small organic farm, discovering the potent synergy between Curcumin-rich turmeric and spicy, soothing ginger.
+                        </p>
+                        
+                        <!-- Body Paragraph -->
+                        <p class="text-muted mb-5">
+                            Unlike mass-produced powders, our product is stone-ground and sun-dried to preserve essential oils. Whether you take it as a morning tea, a golden milk latte, or a cooking spice, you are getting the earth's purest medicine.
+                        </p>
+
+                        <!-- Feature Grid (Icons) -->
+                        <div class="row g-4 mb-5">
+                            <!-- Item 1 -->
+                            <div class="col-md-6 d-flex align-items-center">
+                                <!-- This uses the new CSS class .icon-circle-bg -->
+                                <div class="icon-circle-bg me-3 shadow-sm">
+                                    <i class="bi bi-patch-check-fill fs-5"></i>
+                                </div>
+                                <div>
+                                    <h6 class="fw-bold mb-0">100% Organic</h6>
+                                    <small class="text-muted">Certified pure.</small>
+                                </div>
+                            </div>
+                            
+                            <!-- Item 2 -->
+                            <div class="col-md-6 d-flex align-items-center">
+                                <!-- This uses the new CSS class .icon-circle-bg -->
+                                <div class="icon-circle-bg me-3 shadow-sm">
+                                    <i class="bi bi-heart-pulse-fill fs-5"></i>
+                                </div>
+                                <div>
+                                    <h6 class="fw-bold mb-0">High Curcumin</h6>
+                                    <small class="text-muted">Max absorption.</small>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Button (Uses the new CSS class .btn-turmeric) -->
+                        <a href="#shop" class="btn btn-turmeric shadow-lg">
+                            Discover Our Blends <i class="bi bi-arrow-right ms-2"></i>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Mission & Vision Section -->
+    <section id="mission" class="bg-ginger-dark position-relative">
+        <div class="container">
+            
+            <!-- Section Header (White text since background is dark) -->
+            <div class="row justify-content-center text-center mb-5">
+                <div class="col-lg-8">
+                    <span class="text-white-50 text-uppercase fw-bold ls-2 d-block mb-2">Our Core Values</span>
+                    <h2 class="display-5 text-white fw-bold">Rooted in Purity</h2>
+                    <p class="text-white-50 mt-3 lead">We don't just sell spices; we cultivate a lifestyle of natural healing and mindful living.</p>
+                </div>
+            </div>
+
+            <!-- Cards Row (Horizontally Aligned) -->
+            <div class="row g-4">
+                
+                <!-- Card 1: Our Mission -->
+                <div class="col-md-4" data-aos="fade-up" data-aos-delay="0">
+                    <div class="card-static h-100">
+                        <div class="icon-wrap mb-4">
+                            <i class="bi bi-compass-fill"></i>
+                        </div>
+                        <h3 class="h4 fw-bold mb-3">Our Mission</h3>
+                        <p class="text-muted">
+                            To bridge the gap between ancient Ayurvedic wisdom and modern convenience, providing organic solutions that heal from within.
+                        </p>
+                    </div>
+                </div>
+
+                <!-- Card 2: Our Vision -->
+                <div class="col-md-4" data-aos="fade-up" data-aos-delay="150">
+                    <div class="card-static h-100">
+                        <div class="icon-wrap mb-4">
+                            <i class="bi bi-eye-fill"></i>
+                        </div>
+                        <h3 class="h4 fw-bold mb-3">Our Vision</h3>
+                        <p class="text-muted">
+                            A world where natural preventative care is the standard, and every household has access to the earth's most potent superfoods.
+                        </p>
+                    </div>
+                </div>
+
+                <!-- Card 3: Our Promise (Values) -->
+                <div class="col-md-4" data-aos="fade-up" data-aos-delay="300">
+                    <div class="card-static h-100">
+                        <div class="icon-wrap mb-4">
+                            <i class="bi bi-gem"></i>
+                        </div>
+                        <h3 class="h4 fw-bold mb-3">Our Promise</h3>
+                        <p class="text-muted">
+                            No fillers, no preservatives, and ethically sourced ingredients that support the farmers who nurture our soil.
+                        </p>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="bg-cream position-relative">
+        <div class="container">
+            <div class="row align-items-center">
+                
+                <!-- COLUMN 1: Contact Details -->
+                <div class="col-lg-5 mb-5 mb-lg-0" data-aos="fade-up">
+                    <span class="text-gradient-gold fw-bold text-uppercase ls-2 mb-2 d-block">Get in Touch</span>
+                    <h2 class="display-5 fw-bold mb-4">Let's Connect</h2>
+                    <p class="text-muted mb-5">Have questions about our blends? Visit our HQ or give us a call.</p>
+
+                    <!-- Contact Item: Address -->
+                    <div class="d-flex align-items-center mb-4">
+                        <div class="icon-circle-bg shadow-sm me-4">
+                            <i class="bi bi-geo-alt-fill fs-4"></i>
+                        </div>
+                        <div>
+                            <h6 class="fw-bold mb-0 text-dark">Our Headquarters</h6>
+                            <p class="mb-0 text-muted">GoldenRoot Inc.<br>28th St. cor. 5th St., Ayala High Street Mall<br> Global City (BGC) Taguig, Metro Manila, Philippines</p>
+                        </div>
+                    </div>
+
+                    <!-- Contact Item: Phone -->
+                    <div class="d-flex align-items-center mb-4">
+                        <div class="icon-circle-bg shadow-sm me-4">
+                            <i class="bi bi-telephone-fill fs-4"></i>
+                        </div>
+                        <div>
+                            <h6 class="fw-bold mb-0 text-dark">Phone</h6>
+                            <p class="mb-0 text-muted">+63 917 123 4567</p>
+                        </div>
+                    </div>
+
+                    <!-- Contact Item: Email -->
+                    <div class="d-flex align-items-center">
+                        <div class="icon-circle-bg shadow-sm me-4">
+                            <i class="bi bi-envelope-fill fs-4"></i>
+                        </div>
+                        <div>
+                            <h6 class="fw-bold mb-0 text-dark">Email Support</h6>
+                            <p class="mb-0 text-muted">hello@goldenroot.com</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- COLUMN 2: Static Map -->
+                <div class="col-lg-7 ps-lg-5" data-aos="zoom-in" data-aos-delay="200">
+                    <div class="map-frame shadow-lg rounded-4 overflow-hidden">
+                        <!-- Google Map Embed (Centered on BGC) -->
+                        <iframe 
+                            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d15445.32757279093!2d121.04163233955079!3d14.551842361688636!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3397c88ea052bd3b%3A0x89e27c1f0340914d!2sBonifacio%20Global%20City%2C%20Taguig%2C%20Metro%20Manila!5e0!3m2!1sen!2sph!4v1700000000000!5m2!1sen!2sph" 
+                            width="100%" 
+                            height="450" 
+                            style="border:0;" 
+                            allowfullscreen="" 
+                            loading="lazy" 
+                            referrerpolicy="no-referrer-when-downgrade">
+                        </iframe>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-dark text-white py-4 text-center">
+        <div class="container">
+            <div class="mb-3">
+                <i class="bi bi-facebook fs-4 mx-2"></i>
+                <i class="bi bi-instagram fs-4 mx-2"></i>
+                <i class="bi bi-twitter-x fs-4 mx-2"></i>
+            </div>
+            <p class="mb-0">&copy; 2025 GoldenRoot Inc. All Rights Reserved.</p>
+        </div>
+    </footer>
+
+    <!-- Bootstrap 5.3 JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+
+    <!-- AOS Animation JS -->
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+
+    <script>
+        // Initialize the animation library
+        AOS.init({
+            duration: 1000, /* Animation takes 1 second */
+            once: true,     /* Animation happens only once (doesn't reset when scrolling up) */
+            offset: 100     /* Trigger animation 100px before element is visible */
+        });
+    </script>
+    
+    <!-- Script to change navbar background on scroll -->
+    <script>
+        const navbar = document.querySelector('.navbar');
+        window.addEventListener('scroll', () => {
+            if (window.scrollY > 50) {
+                navbar.style.backgroundColor = 'rgba(255, 255, 255, 0.95)';
+            } else {
+                navbar.style.backgroundColor = 'rgba(255, 255, 255, 0.85)';
+            }
+        });
+
+
+        document.addEventListener("DOMContentLoaded", function() {
+            // 1. Select all links that start with "#"
+            const links = document.querySelectorAll('a[href^="#"]');
+
+            links.forEach(link => {
+                link.addEventListener("click", function(e) {
+                    // 2. Prevent the default behavior (jumping & adding # to URL)
+                    e.preventDefault();
+
+                    // 3. Get the target section ID (e.g., "#about")
+                    const targetId = this.getAttribute("href");
+                    const targetSection = document.querySelector(targetId);
+
+                    if (targetSection) {
+                        // 4. Calculate position - accounting for your fixed Navbar
+                        // Change '80' to the approximate height of your navbar
+                        const headerOffset = 80; 
+                        const elementPosition = targetSection.getBoundingClientRect().top;
+                        const offsetPosition = elementPosition + window.scrollY - headerOffset;
+
+                        // 5. Scroll smoothly
+                        window.scrollTo({
+                            top: offsetPosition,
+                            behavior: "smooth"
+                        });
+
+                        // 6. Optional: Close mobile menu if open (Bootstrap specific)
+                        const navbarCollapse = document.querySelector('.navbar-collapse');
+                        if (navbarCollapse.classList.contains('show')) {
+                            const bsCollapse = new bootstrap.Collapse(navbarCollapse, {
+                                toggle: true
+                            });
+                        }
+                    }
+                });
+            });
+        });
+    </script>
+</body>
+</html>
