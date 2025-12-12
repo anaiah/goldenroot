@@ -49,6 +49,19 @@
         margin-left: -50px;
     }
 
+    /* Mobile Only Rules (Screens narrower than 992px) */
+@media (max-width: 991px) {
+    .navbar-brand {
+        /* 1. Apply your requested padding */
+        padding: 6px 20px;
+
+        /* 2. IMPORTANT: Reset the margin so it doesn't go off-screen */
+        margin-left: 0;
+        
+        /* 3. Optional: Make font slightly smaller for small phones */
+        font-size: 1.3rem; 
+    }
+}
     /* Optional: Make it glow Gold when you hover over the logo */
     .navbar-brand:hover {
         border-color: var(--primary-color); /* Turns border Gold */
