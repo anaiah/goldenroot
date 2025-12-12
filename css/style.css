@@ -24,11 +24,20 @@
         transition: all 0.3s ease;
     }
 
+    
     .navbar-brand {
-        color: var(--secondary-color) !important;
-        font-weight: bold;
-        font-size: 1.5rem;
-    }
+    /* 1. The exact name Google gave you */
+    font-family: 'Sekuya'; 
+    
+    /* 2. Make it bigger so it looks like a logo */
+    font-size: 1.8rem; 
+    
+    /* 3. Keep your Ginger Brown color */
+    color: var(--secondary-color) !important;
+    
+    /* 4. Optional: Remove bold if the font is already heavy */
+    font-weight: 700; 
+}
 
     .nav-link {
         color: #555 !important;
@@ -247,4 +256,14 @@
        This effectively turns the interactive map into a static image.
     */
     pointer-events: none; 
+}
+.sacramento-regular {
+  font-family: "Sacramento", cursive;
+  font-weight: 400;
+  font-style: normal;
+}
+.sekuya-regular {
+  font-family: "Sekuya", system-ui;
+  font-weight: 400;
+  font-style: normal;
 }
