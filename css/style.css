@@ -6,16 +6,17 @@
         --dark-text: #333333;
     }
 
-    body {
-        font-family: 'Poppins', sans-serif;
-        color: var(--dark-text);
-        overflow-x: hidden; /* Prevents scrollbar if animations slide in */
-    }
-
+    
+    /*
     h1, h2, h3, h4, h5, h6, .navbar-brand {
         font-family: 'Playfair Display', serif;
     }
-
+    */
+    /* 4. Optional: If you still want your Headings (h1, h2) to be Lato but Bold */
+    h1, h2, h3, h4, h5, h6 {
+        font-family: 'Lato', sans-serif;
+        font-weight: 700; /* Bold Lato looks very clean */
+    }
     /* 2. NAVBAR (Glassmorphism) */
     .navbar-custom {
         background-color: rgba(255, 255, 255, 0.85);
@@ -26,19 +27,33 @@
 
     
     .navbar-brand {
-    /* 1. The exact name Google gave you */
-    font-family: 'Sekuya'; 
-    
-    /* 2. Make it bigger so it looks like a logo */
-    font-size: 1.8rem; 
-    
-    /* 3. Keep your Ginger Brown color */
-    color: var(--secondary-color) !important;
-    
-    /* 4. Optional: Remove bold if the font is already heavy */
-    font-weight: 700; 
-}
+        /* 1. The exact name Google gave you */
+        font-family: 'BBH Hegarty',cursive; 
+        /* 2. Make it bigger so it looks like a logo */
+        font-size: 1.8rem; 
+        /* 3. Keep your Ginger Brown color */
+        color: var(--secondary-color) !important;
+        /* 4. Optional: Remove bold if the font is already heavy */
+        font-weight: 500; 
+        /* 2. The Box (Rectangle) */
+        border: 5px solid var(--secondary-color); /* Same Brown color as text */
+        padding: 6px 10px;  /* Spacing: 6px top/bottom, 10px left/right */
+        
+        /* 3. Refinements for the "Logo" Look */
+        border-radius: 4px;    /* Slightly softened corners (change to 0px for sharp corners) */
+        letter-spacing: 1px;   /* Adds elegance */
+        line-height: 1;        /* Fixes vertical alignment inside the box */
+        display: inline-block; /* Ensures the box wraps tightly around the text */
+        transition: all 0.3s ease; /* Smooth effect if you hover */
 
+        margin-left: -50px;
+    }
+
+    /* Optional: Make it glow Gold when you hover over the logo */
+    .navbar-brand:hover {
+        border-color: var(--primary-color); /* Turns border Gold */
+        color: var(--primary-color) !important; /* Turns text Gold */
+    }    
     .nav-link {
         color: #555 !important;
         font-weight: 500;
@@ -257,6 +272,12 @@
     */
     pointer-events: none; 
 }
+.bbh-hegarty-regular {
+  font-family: "BBH Hegarty", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
 .sacramento-regular {
   font-family: "Sacramento", cursive;
   font-weight: 400;
@@ -266,4 +287,70 @@
   font-family: "Sekuya", system-ui;
   font-weight: 400;
   font-style: normal;
+}
+.lato-thin {
+  font-family: "Lato", sans-serif;
+  font-weight: 100;
+  font-style: normal;
+}
+
+.lato-light {
+  font-family: "Lato", sans-serif;
+  font-weight: 300;
+  font-style: normal;
+}
+
+.lato-regular {
+  font-family: "Lato", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+.lato-bold {
+  font-family: "Lato", sans-serif;
+  font-weight: 700;
+  font-style: normal;
+}
+
+.lato-black {
+  font-family: "Lato", sans-serif;
+  font-weight: 900;
+  font-style: normal;
+}
+
+.lato-thin-italic {
+  font-family: "Lato", sans-serif;
+  font-weight: 100;
+  font-style: italic;
+}
+
+.lato-light-italic {
+  font-family: "Lato", sans-serif;
+  font-weight: 300;
+  font-style: italic;
+}
+
+.lato-regular-italic {
+  font-family: "Lato", sans-serif;
+  font-weight: 400;
+  font-style: italic;
+}
+
+.lato-bold-italic {
+  font-family: "Lato", sans-serif;
+  font-weight: 700;
+  font-style: italic;
+}
+
+.lato-black-italic {
+  font-family: "Lato", sans-serif;
+  font-weight: 900;
+  font-style: italic;
+}
+/* 1. Set the Global Font to Lato */
+body {
+    /* This changes ALL text on the site to Lato */
+    font-family: 'Lato', sans-serif; 
+    color: var(--dark-text);
+    overflow-x: hidden;
 }
