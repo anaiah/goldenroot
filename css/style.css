@@ -6,15 +6,17 @@
         --dark-text: #333333;
     }
 
-    
-    /*
-    h1, h2, h3, h4, h5, h6, .navbar-brand {
-        font-family: 'Playfair Display', serif;
+    /* 1. Set the Global Font to Lato */
+    body {
+        /* This changes ALL text on the site to Lato */
+        font-family: 'Brawler'; 
+        color: var(--dark-text);
+        overflow-x: hidden;
     }
-    */
-    /* 4. Optional: If you still want your Headings (h1, h2) to be Lato but Bold */
+
+    
     h1, h2, h3, h4, h5, h6 {
-        font-family: 'Lato', sans-serif;
+        font-family: 'Brawler';
         font-weight: 700; /* Bold Lato looks very clean */
     }
     /* 2. NAVBAR (Glassmorphism) */
@@ -360,10 +362,14 @@
   font-weight: 900;
   font-style: italic;
 }
-/* 1. Set the Global Font to Lato */
-body {
-    /* This changes ALL text on the site to Lato */
-    font-family: 'Lato', sans-serif; 
-    color: var(--dark-text);
-    overflow-x: hidden;
+.brawler-regular {
+  font-family: "Brawler", serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+.brawler-bold {
+  font-family: "Brawler", serif;
+  font-weight: 700;
+  font-style: normal;
 }
